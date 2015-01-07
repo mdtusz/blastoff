@@ -46,7 +46,7 @@ blastoff(1, function(err, data){
   }
 });
 
-//-> Output will be json
+//-> Output will be a single element array with an object for the next launch.
 ```
 
 Thanks to spaceflightnow.com for the data.
