@@ -1,0 +1,23 @@
+{
+  "name": "Blastoff",
+  "version": "0.0.1",
+  "description": "A tool to find out about upcoming space mission launches.",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "commander": "^2.6.0",
+    "prettyjson": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miklós Tusz",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "bin": {
+    "blastoff": "index.js"
+  }
+}
