@@ -32,6 +32,7 @@ Prints info for the next 5 rocket launches in boring mode (plain old json). If y
 `blastoff(count, callback)`
 
 **count**: A number that determines how many results to return.
+
 **callback**: Follows standard (err, data) pattern.`
 
 ```javascript
