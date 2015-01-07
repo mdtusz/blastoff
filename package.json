@@ -1,6 +1,6 @@
 {
   "name": "blastoff",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool to find out about upcoming space mission launches.",
   "main": "index.js",
   "dependencies": {
