@@ -18,8 +18,8 @@ blastoff(program.count, function (err, data) {
     console.log(data);
   } else {
 
-    if (program.wacky) {
-      options = wackyOptions;
+    if (program.rainbow) {
+      options = rainbow;
     }
 
     console.log(prettyjson.render(data, options));

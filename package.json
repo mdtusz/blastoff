@@ -1,8 +1,8 @@
 {
   "name": "blastoff",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A tool to find out about upcoming space mission launches.",
-  "main": "index.js",
+  "main": "blastoff.js",
   "dependencies": {
     "cheerio": "^0.18.0",
     "commander": "^2.6.0",
@@ -12,13 +12,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Miklós Tusz",
+  "author": {
+    "name": "Miklós Tusz"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=0.10"
   },
   "bin": {
-    "blastoff": "index.js"
+    "blastoff": "blastoff-cli.js"
   },
   "repository": {
     "type": "git",
@@ -33,5 +35,11 @@
   "bugs": {
     "url": "https://github.com/mdtusz/blastoff/issues"
   },
-  "homepage": "https://github.com/mdtusz/blastoff"
+  "homepage": "https://github.com/mdtusz/blastoff",
+  "readme": "blastoff\n========\n\nFind out when the next rocket launch is. \n\n# What's it do?\n\nRunning `blastoff` from the command line will output information on upcoming space missions and rocket launches in chronological order. It can also be `require`'d for use in code.\n\n## Installation\n\n```\nnpm install -g blastoff\n````\n\nFor non-command-line use, you can obviously leave out the -g flag.\n\n## Use\n\n```\nblastoff\n```\n\nPrints info for the next rocket launch.\n\n```\nblastoff --count 5 -b\n```\n\nPrints info for the next 5 rocket launches in boring mode (plain old json). If you `require` it, it will always return json so no option needs to be set.\n\n`blastoff(count, callback)`\n\n**count**: A number that determines how many results to return.\n\n**callback**: Follows standard (err, data) pattern.`\n\n```javascript\nvar blastoff = require('blastoff');\n\nblastoff(1, function(err, data){\n  if(err){\n    console.log('Looks like Miklós made a mistake somewhere.');\n  }else{\n    console.log(data);\n  }\n});\n\n//-> Output will be a single element array with an object for the next launch.\n```\n\nThanks to spaceflightnow.com for the data.\n",
+  "readmeFilename": "README.md",
+  "gitHead": "ae19c892bec62f28aca6e38cc0f93e4307cfaa48",
+  "_id": "blastoff@0.0.3",
+  "_shasum": "193d75bf68ee76551cf9ebf4f5a4fabe90db9027",
+  "_from": "blastoff@"
 }
