@@ -35,8 +35,6 @@ Prints info for the next 5 rocket launches in boring mode (plain old json). If y
 
 **callback**: Follows standard (err, data) pattern.`
 
-**WHOOPS!** Ignore this. `require`ing doesn't work quite right.
-
 ```javascript
 var blastoff = require('blastoff');
 
