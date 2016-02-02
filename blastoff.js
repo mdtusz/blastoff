@@ -36,12 +36,12 @@ var blastoff = (function () {
     for (var i = 0; i < count && i < 60; i++) {
       mission = $('.datename .mission').eq(i).text();
       date = $('.datename .launchdate').eq(i).text();
+      missiondata = $('.missiondata').eq(i).text().split('\n');
 
       if(missiondata.length < 2){
         break;
       }
 
-      missiondata = $('.missiondata').eq(i).text().split('\n');
       launchtime = missiondata[0].slice(13);
       launchsite = missiondata[1].slice(13);
       description = $('.missdescrip').eq(i).text().slice(0, -9);
