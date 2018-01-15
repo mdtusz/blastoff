@@ -1,3 +1,5 @@
+**This library is no longer maintained**
+
 blastoff
 ========
 
